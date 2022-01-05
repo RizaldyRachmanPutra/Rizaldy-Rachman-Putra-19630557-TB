@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="35f34e5d-6d95-4d0e-befc-1cddd92bb8ca">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from mobil]]>
+	</queryString>
+	<field name="kode_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_polisi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tahun_mobil" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tarif_sewa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="68" splitType="Stretch">
+			<line>
+				<reportElement uuid="7916e88c-cb9e-45a4-b7c2-e22fb2a3c790" x="0" y="8" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="1835f1b8-0d52-4edd-884d-caeb294b12b4" positionType="FixRelativeToBottom" x="0" y="51" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="0aedf7f4-ef4d-48ad-b90b-2587b4a71015" x="66" y="15" width="424" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Mobil Rental Rizaldy]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="eef0d8f0-72bd-431b-8964-9f7ac63ddb0b" mode="Opaque" x="0" y="0" width="111" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[kode_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b06284de-b69e-4d26-b550-5836d03999cb" mode="Opaque" x="111" y="0" width="111" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[nama_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="80a639cb-91b3-40d3-9db8-4e7df2dc088a" mode="Opaque" x="222" y="0" width="111" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[no_polisi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="10448268-a080-4093-abbe-4b00b03e93ef" mode="Opaque" x="333" y="0" width="111" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[tahun_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="769b5cd5-113b-4124-b537-15f65cde6c21" mode="Opaque" x="444" y="0" width="111" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[tarif_sewa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement uuid="6177b92a-a294-46a8-8166-f5c9b960fce5" x="0" y="0" width="111" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kode_mobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="03a235bf-079e-44a7-a13d-202ea5284cdd" x="111" y="0" width="111" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_mobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="56307b4f-88c0-4c5d-bb53-80c578acc074" x="222" y="0" width="111" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_polisi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c78f2590-0f90-4ac6-bc90-7ebfa1ee7a87" x="333" y="0" width="111" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun_mobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4f2ac07f-09ec-44c5-aa4e-fcf8c85ebf45" x="444" y="0" width="111" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tarif_sewa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="48" splitType="Stretch">
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement uuid="2c4b8605-e75c-470f-8a17-73c83474c411" key="textField" x="516" y="6" width="36" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement uuid="d7cb077a-ad9c-4ab5-ad08-d935d8e5e48d" key="textField" x="342" y="6" width="170" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER} + " of "]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement uuid="ad26540b-8d6e-48d5-a104-5af5b9f18aa4" key="textField" x="1" y="6" width="209" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
